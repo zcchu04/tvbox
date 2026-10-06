@@ -1,3 +1,6 @@
+//本配置可用于TVBox或者影视仓使用，不定期维护里面的资源
+//配置方法：打开软件-设置-配置地址-粘帖此配置地址-返回主页完成
+//本接口免费使用，仅供软件测试使用，请勿商业用途。
 {
   "spider": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/jar/jinenge.jar;md5;9cc29f6286b2fe7910628852929c4bdb",
   "wallpaper": "https://tv.jinenyy.vip",
@@ -71,13 +74,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "ext": "FbjCcU1KqpC5pkRX4Q3D+NciPclIFs4EHzRV89m3pENRS6PivxPrlXvH/4efUSWwUCWwwk8srkIDSXN9RIJkSCZPJqnRikLRakBH0XBB6uNlX6XgMjhUKBTbBXopnsWdvXX6OowIBLQ78wghs3yRbgJxOYvrglBVIeI4cTcDGxixtMJ+yL0zE9g1d+N2RH4JERZh3CoYXSO1hH420ARbjt08lerroREmfGoT8JEGfTFW3MrK3hWueIyRsyOllsj/P87VXSxEVLnwNm4fos8lCFL74+azvs61n89svqg="
-    },
-    {
-      "key": "影探",
-      "name": " 🕵┃影探┃影视",
-      "type": 3,
-      "api": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/js/通用api数据.js",
-      "ext": "https://d.kstore.space/download/6296/js/yt.js"
     },
     {
       "key": "忍者",
@@ -184,17 +180,6 @@
       "ext": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/js/云播配置.js"
     },
     {
-      "key": "新视觉",
-      "name": "🐦┃视觉┃影视",
-      "type": 3,
-      "api": "csp_Xinsj",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://www.80yy3.com/",
-      "jar": "http://like.xn--z7x900a.live:66/jar/fatcat.jar;md5;f2e335a610902ad385828c2e67ad884a"
-    },
-    {
       "key": "007影视",
       "name": "🍭┃零七┃影视",
       "type": 3,
@@ -217,13 +202,6 @@
       "playerType": "2",
       "api": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/js/通用api数据.js",
       "ext": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/js/奇优配置.js"
-    },
-    {
-      "key": "虎虎",
-      "name": "🐯┃虎虎┃影视",
-      "type": 3,
-      "api": "csp_Panda",
-      "ext": "http://我不是.肥猫.live/json/虎虎.json"
     },
     {
       "key": "drpy_js_360影视",
@@ -302,18 +280,6 @@
         "type": "list"
       },
       "jar": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/jar/通用.jar;md5;f2e335a610902ad385828c2e67ad884a"
-    },
-    {
-      "key": "drpy_js_310直播",
-      "name": "🏀┃体育┃直播",
-      "type": 3,
-      "api": "https://d.kstore.space/download/6296/js/lib/drpy2.min.js",
-      "changeable": 0,
-      "gridview": 3,
-      "style": {
-        "type": "list"
-      },
-      "ext": "https://d.kstore.space/download/6296/js/310直播.js"
     },
     {
       "key": "csp_search_Panda_pansearch",
@@ -545,7 +511,16 @@
       }
     }
   ],
-  "lives":[{"name":"电视直播","type":0,"url":"https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/tvlive/tvlive.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
+  "lives": [
+    {
+      "name": "电视直播",
+      "type": 0,
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/tvlive/tvlive.txt",
+      "playerType": 1,
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    }
+  ],
   "rules": [
     {
       "name": "量子",

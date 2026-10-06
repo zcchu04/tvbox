@@ -3,6 +3,22 @@
     {
       "name": "综合源",
       "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/1.json"
+    },
+    {
+      "name": "liucn",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/liucn/m.json"
+    },
+    {
+      "name": "王小二",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/wex/wex.json"
+    },
+    {
+      "name": "qist",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/qist/jsm.json"
+    },
+    {
+      "name": "高天流云",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/gao/js.json"
     }
   ]
 }
