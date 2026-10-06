@@ -22,13 +22,32 @@ import { loadProject, readConfig, parseConfig, writeState, fetchUrl } from './li
 //            they are rewritten to the source folder before merging.
 //
 //   node tools/merge.mjs [mergeIndex]
+//   node tools/merge.mjs --sources liucn,wex --output probe/x.json [--top liucn]
+//     ad-hoc merge of a subset, for experiments (not registered anywhere)
 
 const project = loadProject();
 const merges = project.merges || [];
-const index = Number(process.argv[2] || 0);
-const merge = merges[index];
+
+function argOf(flag) {
+  const i = process.argv.indexOf(flag);
+  return i >= 0 ? process.argv[i + 1] : null;
+}
+
+let merge;
+const subset = argOf('--sources');
+if (subset) {
+  merge = {
+    output: argOf('--output') || 'hb.json',
+    name: 'ad-hoc',
+    sources: subset.split(',').map((s) => s.trim()),
+    topSpiderFrom: argOf('--top') || null,
+  };
+} else {
+  const index = Number(process.argv[2] || 0);
+  merge = merges[index];
+}
 if (!merge) {
-  console.error(`no merge #${index} in tools/sources.json`);
+  console.error(`no merge #${process.argv[2] || 0} in tools/sources.json`);
   process.exit(1);
 }
 
