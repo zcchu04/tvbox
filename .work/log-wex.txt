@@ -1,4 +1,0 @@
-config ok: wex.json 19893B
-config refs: 0 unique, 0 file candidates
-
-=== wex: downloaded 1, failures 0, md5 mismatches 0 ===
