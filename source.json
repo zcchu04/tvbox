@@ -1,3 +1,8 @@
 {
-    "12":"11"
+  "urls": [
+    {
+      "name": "综合源",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/1.json"
+    }
+  ]
 }
