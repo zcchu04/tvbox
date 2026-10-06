@@ -1,0 +1,214 @@
+targets: 41 absolute urls
+FAIL  ERR fetch failed  https://d.kstore.space/download/6296/js/yt.js
+FAIL  ERR fetch failed  http://like.xn--z7x900a.live:66/jar/fatcat.jar
+FAIL  404  http://我不是.肥猫.live/json/虎虎.json
+FAIL  ERR fetch failed  https://d.kstore.space/download/6296/js/lib/drpy2.min.js
+FAIL  ERR fetch failed  https://d.kstore.space/download/6296/js/310直播.js
+FAIL  502  http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=
+FAIL  ERR fetch failed  https://myd666.tv/lvdou_api.php/v1.vod
+FAIL  ERR fetch failed  https://taopianapi.com/cjapi/mc/vod/json.html
+FAIL  404  https://up.mediy.cn/033_喜欢_adf390021f221477b26a94f5eaf02643.png
+FAIL  ERR fetch failed  http://api.888484.xyz/神秘哥哥/super.php?v=
+ADD   jiexi.php  1155B  7a08b27d2219
+FAIL  ERR fetch failed  http://pandown.pro/app/kkdy.php?url=
+FAIL  ERR fetch failed  https://jx.yparse.com/index.php?url=
+FAIL  ERR fetch failed  http://xiutan.shiyifacai.com/json/qingfeng.php?url=
+FAIL  404  http://我不是.肥猫.live/TV/tvzb.txt
+ADD   4ef0c536f599d55d11bc5815ab160a2f.jpg  959300B  c3bb107baf51 [declared md5 OK]
+ADD   3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif  1196606B  ce83404823c3
+ADD   20260414181247-ae51abfbfe.txt  6160B  a2ef6faddc91
+ADD   bili001.txt  116794B  5fff83491221
+ADD   bilisong.txt  17580B  bec248b43df5
+ADD   3C3AB7A_773_ertong_20250828171550247newMediaImage.txt  3666B  1903bbf1fae3
+ADD   4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt  9611B  a1140f98d40d
+ADD   19B1839_773_chuzhong_20250828171521929newMediaImage.txt  31748B  ba156c52e074
+ADD   345A587_773_gaozhong_20250828171449997newMediaImage.txt  32030B  e44b3a3a8b79
+FAIL  ERR fetch failed  http://pan.qiaoji8.com/tvbox/neibu.php?url=
+FAIL  ERR fetch failed  https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u
+FAIL  ERR fetch failed  https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt
+ADD   interface.txt  469B  ad5475bc7025
+ADD   test_channels.m3u  578066B  2039b4da42eb
+ADD   app_dyttandroid.txt  65B  0026cd414259
+ADD   app.txt  66B  ca3d7b28e958
+ADD   az5.txt  66B  6d375b7c63ad
+ADD   app_xpg_android.txt  65B  0026cd414259
+ADD   lyjszx.txt  25B  b48a34ee8f44
+ADD   9.txt  26B  ba79d9eaa537
+ADD   jx.php  852B  1262f7a99cce
+FAIL  404  https://ylu.cc/index.php?url=
+FAIL  ERR fetch failed  https://zy.qiaoji8.com/xiafan.php?url=
+ADD   index.php  3209B  3492d55ed90b
+FAIL  ERR fetch failed  https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt
+FAIL  ERR fetch failed  http://pan.qiaoji8.com/tvbox/gouzi.php?url=
+
+=== common: added 20, unchanged 0, changed 0, failed 21 ===
+failures: [
+ {
+  "url": "https://d.kstore.space/download/6296/js/yt.js",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "cvkkj"
+  ]
+ },
+ {
+  "url": "http://like.xn--z7x900a.live:66/jar/fatcat.jar",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "cvkkj"
+  ]
+ },
+ {
+  "url": "http://我不是.肥猫.live/json/虎虎.json",
+  "status": 404,
+  "folders": [
+   "cvkkj"
+  ]
+ },
+ {
+  "url": "https://d.kstore.space/download/6296/js/lib/drpy2.min.js",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "cvkkj"
+  ]
+ },
+ {
+  "url": "https://d.kstore.space/download/6296/js/310直播.js",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "cvkkj"
+  ]
+ },
+ {
+  "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+  "status": 502,
+  "folders": [
+   "cvkkj",
+   "liucn"
+  ]
+ },
+ {
+  "url": "https://myd666.tv/lvdou_api.php/v1.vod",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "https://taopianapi.com/cjapi/mc/vod/json.html",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "https://up.mediy.cn/033_喜欢_adf390021f221477b26a94f5eaf02643.png",
+  "status": 404,
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "http://api.888484.xyz/神秘哥哥/super.php?v=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "http://pandown.pro/app/kkdy.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn",
+   "qist"
+  ]
+ },
+ {
+  "url": "https://jx.yparse.com/index.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn",
+   "qist",
+   "gao"
+  ]
+ },
+ {
+  "url": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "http://我不是.肥猫.live/TV/tvzb.txt",
+  "status": 404,
+  "folders": [
+   "liucn"
+  ]
+ },
+ {
+  "url": "http://pan.qiaoji8.com/tvbox/neibu.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "wex",
+   "gao"
+  ]
+ },
+ {
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "wex"
+  ]
+ },
+ {
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "wex"
+  ]
+ },
+ {
+  "url": "https://ylu.cc/index.php?url=",
+  "status": 404,
+  "folders": [
+   "qist"
+  ]
+ },
+ {
+  "url": "https://zy.qiaoji8.com/xiafan.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "qist"
+  ]
+ },
+ {
+  "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "gao"
+  ]
+ },
+ {
+  "url": "http://pan.qiaoji8.com/tvbox/gouzi.php?url=",
+  "status": "ERR",
+  "err": "fetch failed",
+  "folders": [
+   "gao"
+  ]
+ }
+]

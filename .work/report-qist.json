@@ -1,0 +1,203 @@
+{
+  "folder": "qist",
+  "entryName": "jsm.json",
+  "downloaded": {
+    "jsm.json": {
+      "md5": "b180161eb7866938702b3fd590400965",
+      "size": 47091
+    },
+    "tvboxtv.txt": {
+      "md5": "58e20c83d3ed441b1d4f6826fdb1a0a6",
+      "size": 154596,
+      "md5ok": true
+    },
+    "lib/drpy2.min.js": {
+      "md5": "c5d8a33f5471b453097de3e97c19ec60",
+      "size": 111826,
+      "md5ok": true
+    },
+    "js/drpy.js": {
+      "md5": "0029875de564b0f9306da6f86827594b",
+      "size": 14120,
+      "md5ok": true
+    },
+    "js/新闪雷.js": {
+      "md5": "82d4aab3571e769247b536d3ec0c4b48",
+      "size": 2172,
+      "md5ok": true
+    },
+    "js/茶杯狐.js": {
+      "md5": "1f8053fd549acdab1477abbeda489576",
+      "size": 3811,
+      "md5ok": true
+    },
+    "py/ITalkBBTV.py": {
+      "md5": "e72f3ba2764fa97ea2b88e70de0b840e",
+      "size": 10066,
+      "md5ok": true
+    },
+    "py/OleLive.py": {
+      "md5": "dd0ee5ae5a57bb0cab01236a0afcda62",
+      "size": 9453,
+      "md5ok": true
+    },
+    "py/华数.py": {
+      "md5": "fadf2e4febd7b092be72552d39ae6cdd",
+      "size": 27881,
+      "md5ok": true
+    },
+    "py/华谊影视.py": {
+      "md5": "59f4a20fcf37df75fcd30ba054637041",
+      "size": 32431,
+      "md5ok": true
+    },
+    "py/Didahd.py": {
+      "md5": "5c5b98d390bb81ebe1058022e628c5c9",
+      "size": 11297,
+      "md5ok": true
+    },
+    "py/TVB云播.py": {
+      "md5": "0cced73b9dd29384d1f5c1a857ed42f6",
+      "size": 16997,
+      "md5ok": true
+    },
+    "json/SEJY.json": {
+      "md5": "aa75a05b9ed8cb566de53c176fdb23ed",
+      "size": 12537,
+      "md5ok": true
+    },
+    "json/XXKT.json": {
+      "md5": "c1c767192c5bc9f25e22462de1be7795",
+      "size": 30934,
+      "md5ok": true
+    },
+    "json/CZKT.json": {
+      "md5": "09e927099bdc9c5cde0f373ace41c0a7",
+      "size": 41230,
+      "md5ok": true
+    },
+    "json/GZKT.json": {
+      "md5": "ad4cf4dcbdc532cc0ae2eab4281e9e8f",
+      "size": 46427,
+      "md5ok": true
+    },
+    "py/Ncat.py": {
+      "md5": "4e6d0c27510e4cec39a428bbc6e814c6",
+      "size": 12689,
+      "md5ok": true
+    },
+    "js/360影视.js": {
+      "md5": "0c68836289a93d2d51852c6c7c7bd7d6",
+      "size": 23845,
+      "md5ok": true
+    },
+    "js/百忙无果.js": {
+      "md5": "a9e4c427a9dc208866138057ae2f842c",
+      "size": 10871,
+      "md5ok": true
+    },
+    "js/腾云驾雾.js": {
+      "md5": "4929390b18583e4abaeee72c70567bb0",
+      "size": 33154,
+      "md5ok": true
+    },
+    "js/奇珍异兽.js": {
+      "md5": "059018496bfcd33c89f84e8b90ef1140",
+      "size": 28088,
+      "md5ok": true
+    },
+    "js/菜狗.js": {
+      "md5": "6acb6ec2e05c985e89d2d76b4010a0fb",
+      "size": 17612,
+      "md5ok": true
+    },
+    "js/优酷.js": {
+      "md5": "57eee9a011be551ce16aafa6b25b9f2f",
+      "size": 73804,
+      "md5ok": true
+    },
+    "js/Anime1动畫.js": {
+      "md5": "18325645c11af4746027de0419a69d94",
+      "size": 4910,
+      "md5ok": true
+    },
+    "js/NT动漫.js": {
+      "md5": "bce4e3a203efe2e0381a8cffb796197a",
+      "size": 25827,
+      "md5ok": true
+    },
+    "js/路漫漫.js": {
+      "md5": "6302ed660d7b46b6ed97a3ef813498e2",
+      "size": 16510,
+      "md5ok": true
+    },
+    "js/去看吧.js": {
+      "md5": "41e03eb0cd0e6aea5bf827e36ee7c693",
+      "size": 31221,
+      "md5ok": true
+    },
+    "js/A8音乐.js": {
+      "md5": "9887dd1057a55ea69d392502de3c0e9c",
+      "size": 668,
+      "md5ok": true
+    },
+    "js/DJ音乐.js": {
+      "md5": "8a17b6d2820cf10ce7bc8f3e92695a7e",
+      "size": 2225,
+      "md5ok": true
+    },
+    "js/蜻蜓FM.js": {
+      "md5": "e03337ae1d76a776a9e6641082f9b43e",
+      "size": 1225,
+      "md5ok": true
+    },
+    "js/爱上你听书网.js": {
+      "md5": "f4f6afc8ec4a86c369684723b0deb398",
+      "size": 985,
+      "md5ok": true
+    },
+    "js/博看听书.js": {
+      "md5": "c6676fe9c169fd0302d3a7219c06fe73",
+      "size": 2039,
+      "md5ok": true
+    },
+    "js/海洋听书.js": {
+      "md5": "3b20e4a4f789353b79f2ae1a6266c1f5",
+      "size": 2068,
+      "md5ok": true
+    },
+    "js/有声小说吧.js": {
+      "md5": "eb25488cc5dbee0cb3115c1a550d1962",
+      "size": 1830,
+      "md5ok": true
+    },
+    "js/播客.js": {
+      "md5": "cb6e61a2d15fd5b6fd91e95da45067ae",
+      "size": 2008,
+      "md5ok": true
+    },
+    "js/酷6网.js": {
+      "md5": "74994f52646a7ee1454b31e9f67a84d7",
+      "size": 888,
+      "md5ok": true
+    },
+    "js/网易公版影像.js": {
+      "md5": "7a8bad04d1457d6ffd8ec4014eba61be",
+      "size": 1007,
+      "md5ok": true
+    },
+    "lib/drpy-core-lite.min.js": {
+      "md5": "4656e3ee7df1f4db03a6c0af17295b1d",
+      "size": 708488,
+      "md5ok": true
+    }
+  },
+  "failures": [
+    {
+      "relPath": "jar/spider.jar",
+      "status": 403,
+      "from": "jsm.json"
+    }
+  ],
+  "skipped": []
+}

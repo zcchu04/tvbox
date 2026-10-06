@@ -1,0 +1,190 @@
+{
+  "added": [
+    {
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "dir": "26698b7c8c73a980ec7eef2506c5a1ac",
+      "file": "iptv.m3u",
+      "size": 21944,
+      "md5": "dc2e4e8279aaa8175bba1aa31cb156a1",
+      "fetchedAs": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+    },
+    {
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+      "dir": "a2c5af8378b4d7c0bc413b6cfa55fb6e",
+      "file": "interface.txt",
+      "aliasTo": "common/a2c5af8378b4d7c0bc413b6cfa55fb6e/interface.txt",
+      "folders": [
+        "wex"
+      ]
+    },
+    {
+      "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt",
+      "dir": "5e76f630d93365a9c4eae1aa609fbcd0",
+      "file": "tvlive.txt",
+      "size": 13664,
+      "md5": "aeb3d15cea1f683cab32fad60b5a5913",
+      "fetchedAs": "https://ghproxy.net/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt"
+    }
+  ],
+  "unchanged": [
+    {
+      "url": "http://oss4liview.moji.com/thd_file/2026/10/05/4ef0c536f599d55d11bc5815ab160a2f.jpg",
+      "dir": "e8b061505fe63884f8a6f023484c632e",
+      "file": "4ef0c536f599d55d11bc5815ab160a2f.jpg"
+    },
+    {
+      "url": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
+      "dir": "f5ffe21f522de1487f15a800233ce070",
+      "file": "3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif"
+    },
+    {
+      "url": "https://cdn.waimaimingtang.com/file/images/bwc/20260414181247-ae51abfbfe.txt",
+      "dir": "c631ddada4d32efa50a64a5e1302ce80",
+      "file": "20260414181247-ae51abfbfe.txt"
+    },
+    {
+      "url": "https://support-chat.rongcloud.cn/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--47a8ff0e68559a89a9a75b37d09a2b0854dc5a8a/bili001.txt",
+      "dir": "cae27b8e55789542d8242fdd80e8ad47",
+      "file": "bili001.txt"
+    },
+    {
+      "url": "https://support-chat.rongcloud.cn/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3083f43a14e6b59f4bfe248478a3a8765b34bfdd/bilisong.txt",
+      "dir": "94ffacf092099f1db5c3bacf38805984",
+      "file": "bilisong.txt"
+    },
+    {
+      "url": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt",
+      "dir": "d401921dcd4774d12075fbb82f695116",
+      "file": "3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
+    },
+    {
+      "url": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt",
+      "dir": "56c2d311459e9a842d8883125a318779",
+      "file": "4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt"
+    },
+    {
+      "url": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/19B1839_773_chuzhong_20250828171521929newMediaImage.txt",
+      "dir": "e409dedfc7b3b4afa9c134142ec3cc1f",
+      "file": "19B1839_773_chuzhong_20250828171521929newMediaImage.txt"
+    },
+    {
+      "url": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaImage/345A587_773_gaozhong_20250828171449997newMediaImage.txt",
+      "dir": "6e64a45121e5c3e51d3ecab550635737",
+      "file": "345A587_773_gaozhong_20250828171449997newMediaImage.txt"
+    },
+    {
+      "url": "https://develop202.github.io/migu_video/interface.txt",
+      "dir": "a2c5af8378b4d7c0bc413b6cfa55fb6e",
+      "file": "interface.txt"
+    },
+    {
+      "url": "https://epg.pw/test_channels.m3u",
+      "dir": "1c851a98ffc5d2e0fe63c0525e41425a",
+      "file": "test_channels.m3u"
+    },
+    {
+      "url": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
+      "dir": "7e1d475c684aaeb8372f23dc26a5a7df",
+      "file": "app_dyttandroid.txt"
+    },
+    {
+      "url": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
+      "dir": "8951321f68e5b0cd077a0b9b3bcd56a7",
+      "file": "app.txt"
+    },
+    {
+      "url": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+      "dir": "29ccc4ced8aaf6587d366f95f2a98105",
+      "file": "az5.txt"
+    },
+    {
+      "url": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
+      "dir": "4f6c1dae93a77722ac85e689e92345d3",
+      "file": "app_xpg_android.txt"
+    },
+    {
+      "url": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt",
+      "dir": "e9b4b615a60a89137ba92b8673d2d3fd",
+      "file": "lyjszx.txt"
+    },
+    {
+      "url": "https://allinadmin.oss-cn-hangzhou.aliyuncs.com/bk/9.txt",
+      "dir": "e261932ef0a66a280a59cdcb7de00a39",
+      "file": "9.txt"
+    }
+  ],
+  "changed": [],
+  "failed": [
+    {
+      "url": "https://d.kstore.space/download/6296/js/yt.js",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "cvkkj"
+      ]
+    },
+    {
+      "url": "http://like.xn--z7x900a.live:66/jar/fatcat.jar",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "cvkkj"
+      ]
+    },
+    {
+      "url": "http://我不是.肥猫.live/json/虎虎.json",
+      "status": 404,
+      "folders": [
+        "cvkkj"
+      ]
+    },
+    {
+      "url": "https://d.kstore.space/download/6296/js/lib/drpy2.min.js",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "cvkkj"
+      ]
+    },
+    {
+      "url": "https://d.kstore.space/download/6296/js/310直播.js",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "cvkkj"
+      ]
+    },
+    {
+      "url": "https://myd666.tv/lvdou_api.php/v1.vod",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "liucn"
+      ]
+    },
+    {
+      "url": "https://taopianapi.com/cjapi/mc/vod/json.html",
+      "status": "ERR",
+      "err": "fetch failed",
+      "folders": [
+        "liucn"
+      ]
+    },
+    {
+      "url": "https://up.mediy.cn/033_喜欢_adf390021f221477b26a94f5eaf02643.png",
+      "status": 404,
+      "folders": [
+        "liucn"
+      ]
+    },
+    {
+      "url": "http://我不是.肥猫.live/TV/tvzb.txt",
+      "status": 404,
+      "folders": [
+        "liucn"
+      ]
+    }
+  ],
+  "md5DeclaredMismatch": [],
+  "declaredOk": []
+}

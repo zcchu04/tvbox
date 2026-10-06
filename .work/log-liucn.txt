@@ -1,0 +1,239 @@
+config ok: m.json 57874B
+config refs: 158 unique, 303 file candidates
+OK   fty.jar 685819B md5=3d161697458ecbcd2651a749db761ba1
+OK   libs/jar/Token.jar 821266B
+OK   libs/market.json 7964B
+OK   libs/jar/app.jar 368262B
+OK   libs/tv/zb.min.js 11895B
+OK   libs/tv/zb.json 1603B
+OK   libs/js/drpy2.min.js 43377B
+OK   libs/js/虎牙直播.js 21388B
+OK   libs/js/斗鱼直播.js 37008B
+FAIL  lib/drpy2.min.js  (404)  <- m.json
+FAIL  lib/jp.js  (404)  <- m.json
+OK   libs/jar/HCCX.jar 696542B
+OK   libs/hccx/nkvlog.json 11363B
+OK   libs/hccx/Free影视.json 11345B
+OK   libs/jar/Panda.jar 804779B
+FAIL  lib/TVB云播.js  (404)  <- m.json
+FAIL  lib/虎虎.json  (404)  <- m.json
+FAIL  libs/hccx/兄弟.json  (404)  <- m.json
+OK   libs/jar/XYQH.jar 388112B
+OK   libs/hccx/hanjulao.json 11343B
+OK   libs/xyq/jojo.json 3323B
+OK   libs/xyq/VS影院.json 3022B
+OK   libs/xyq/素白白.json 3941B
+OK   libs/xyq/电影牛.json 3366B
+FAIL  lib/短视频.js  (404)  <- m.json
+FAIL  lib/有声小说吧.js  (404)  <- m.json
+FAIL  libs/js/lf_p2p1_min.js  (404)  <- m.json
+OK   libs/jar/P4.jar 804779B
+OK   libs/js/SC1080.js 14572B
+OK   libs/js/TVB云播.js 10934B
+OK   libs/js/爱看.js 18941B
+OK   libs/js/007.js 10174B
+OK   libs/js/ddys.js 6276B
+OK   libs/js/奇优.js 1996B
+OK   libs/js/南瓜.js 11299B
+OK   libs/js/saohuo.js 3777B
+OK   libs/js/荐片.js 8428B
+OK   libs/js/libvio.js 7798B
+OK   libs/js/czspp.js 6933B
+OK   libs/js/大师兄影视.js 11731B
+OK   libs/js/电影先生.js 11120B
+OK   libs/js/xsj.js 10828B
+OK   libs/js/nongmin.js 11124B
+OK   libs/js/bzys.js 9659B
+OK   libs/js/555.js 18808B
+OK   libs/js/iqiyi.js 23564B
+OK   libs/js/youku.js 29352B
+OK   libs/js/qq.js 13204B
+OK   libs/js/mgtv.js 10455B
+OK   libs/js/caigou.js 16708B
+OK   libs/js/360.js 2990B
+OK   libs/js/奇珍异兽.js 23564B
+OK   libs/js/腾云驾雾.js 13214B
+OK   libs/js/百忙无果.js 10471B
+OK   libs/jar/c.jar 401684B
+OK   libs/c/乌鸦.json 1789B
+OK   libs/c/茶杯狐.json 463B
+OK   libs/c/热播之家.json 1057B
+OK   libs/c/骚火2.json 637B
+OK   libs/c/黑狐.json 1614B
+OK   libs/c/蛋蛋剧.json 528B
+OK   libs/c/相声.json 1066B
+OK   libs/c/评书.json 1000B
+OK   libs/c/03yy.json 975B
+OK   libs/hccx/蘑菇.json 728B
+OK   libs/hccx/胖虎.json 11453B
+OK   libs/hccx/蛋蛋影视.json 1108B
+OK   libs/hccx/达达龟影视.json 10468B
+OK   libs/hccx/黑狐影视.json 1343B
+OK   libs/hccx/奇优影院.json 2777B
+OK   libs/hccx/TVB云播.json 11040B
+OK   libs/hccx/骚火影视.json 898B
+OK   libs/hccx/农民影视.json 20251B
+OK   libs/hccx/奇优影视.json 2256B
+OK   libs/hccx/疯狗影视.json 998B
+OK   libs/hccx/万达影视.json 1151B
+OK   libs/hccx/爱看影视.json 8688B
+OK   libs/hccx/七新影视.json 628B
+OK   libs/hccx/超前B站.json 1178B
+FAIL  libs/hccx/4k剧院.json  (404)  <- m.json
+OK   libs/hccx/真不卡影视.json 11052B
+OK   libs/hccx/五五影视.json 473B
+OK   libs/hccx/新视觉影视.json 11219B
+OK   libs/hccx/圣城影视.json 4956B
+OK   libs/hccx/好戏影视.json 19098B
+OK   libs/hccx/七月影视.json 1071B
+OK   libs/hccx/348影视.json 1223B
+OK   libs/hccx/土豪影视.json 12288B
+OK   libs/hccx/YYDS影视.json 958B
+OK   libs/hccx/苹果影视.json 8088B
+OK   libs/hccx/米爱影视.json 12007B
+OK   libs/hccx/非凡资源网.json 4585B
+OK   libs/hccx/量子资源网.json 5059B
+OK   libs/hccx/nkdyw.json 11360B
+OK   libs/hccx/555电影.json 11349B
+OK   libs/hccx/voflix.json 11436B
+OK   libs/hccx/nkvod.json 11361B
+OK   libs/hccx/lkvod.json 11357B
+OK   libs/js/4khdr.js 4558B
+OK   libs/js/6V.js 2152B
+OK   libs/js/bear.js 6401B
+FAIL  lib/dr/kuba.js  (404)  <- m.json
+OK   libs/xyq/港口.json 1908B
+OK   libs/jar/xyq.jar 397830B
+OK   libs/hccx/维奇动漫.json 8612B
+OK   libs/hccx/央视大全.json 1506B
+OK   libs/hccx/py_央视少儿.py 8322B
+OK   libs/hccx/哔哩经典.json 554B
+OK   libs/企鹅直播.json 2450B
+OK   libs/qie.py 3246B
+OK   libs/cctv.py 23281B
+OK   libs/hccx/酷奇MV.json 602B
+OK   libs/js/88看球.js 1202B
+OK   libs/js/jrk.js 1769B
+OK   libs/js/310直播.js 503B
+OK   libs/js/酷奇MV.js 1098B
+OK   libs/js/武享吧.js 1168B
+OK   libs/js/a8音乐.js 567B
+OK   libs/hccx/短剧网.json 918B
+FAIL  libs/js/短视频.js  (404)  <- m.json
+OK   libs/js/有声小说吧.js 1830B
+OK   libs/xyq/Bili短剧.json 1382B
+OK   libs/jar/XBPQ.jar 647438B
+OK   libs/bilibili.json 73847B
+OK   libs/biliych.json 14238B
+OK   libs/js/童趣.js 8198B
+OK   libs/js/兔小贝.js 1009B
+OK   libs/少儿教育.json 9288B
+OK   libs/小学课堂.json 14424B
+OK   libs/初中课堂.json 48275B
+OK   libs/高中课堂.json 49183B
+OK   libs/bili.json 115852B
+OK   libs/hccx/搭讪.json 3064B
+OK   libs/hccx/搭配.json 3774B
+OK   libs/js/B站精简.js 64628B
+FAIL  libs/hccx/美食合集.json  (404)  <- m.json
+OK   libs/hccx/幼儿.json 79613B
+OK   libs/hccx/小学.json 14258B
+OK   libs/hccx/初中.json 33779B
+OK   libs/hccx/高中.json 46641B
+OK   libs/hccx/中医.json 1278B
+OK   libs/hccx/戏曲.json 6868B
+OK   libs/hccx/体育.json 1606B
+OK   libs/hccx/相声.json 2288B
+OK   libs/hccx/球队.json 1827B
+OK   libs/hccx/美女.json 2292B
+OK   libs/hccx/歌手.json 22282B
+OK   libs/hccx/女团.json 3134B
+OK   libs/hccx/歌曲.json 22384B
+OK   libs/hccx/音悦.json 1364B
+FAIL  libs/哔哩直播.js  (404)  <- m.json
+OK   libs/js/alist.min.js 16214B
+OK   libs/js/alist.json 4609B
+OK   libs/js/alist1.json 5175B
+OK   libs/js/webdav.json 281B
+OK   libs/hccx/短视频聚合.json 967B
+OK   libs/tv/tvlive.txt 73511B
+FAIL  lib/tv/ipv6.m3u  (404)  <- m.json
+OK   libs/js/cheerio.min.js 356590B
+OK   libs/js/模板.js 15300B
+OK   libs/js/gbk.js 56246B
+OK   libs/js/mod.js 3668B
+OK   libs/js/sortName.js 32688B
+
+=== liucn: downloaded 150, failures 14, md5 mismatches 0 ===
+failures: [
+ {
+  "relPath": "lib/drpy2.min.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/jp.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/TVB云播.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/虎虎.json",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/hccx/兄弟.json",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/短视频.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/有声小说吧.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/js/lf_p2p1_min.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/hccx/4k剧院.json",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/dr/kuba.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/js/短视频.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/hccx/美食合集.json",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "libs/哔哩直播.js",
+  "status": 404,
+  "from": "m.json"
+ },
+ {
+  "relPath": "lib/tv/ipv6.m3u",
+  "status": 404,
+  "from": "m.json"
+ }
+]

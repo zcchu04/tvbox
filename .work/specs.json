@@ -1,0 +1,34 @@
+[
+  {
+    "folder": "liucn",
+    "entry": "m.json",
+    "configUrl": "https://raw.liucn.cc/box/m.json",
+    "baseUrl": "https://raw.liucn.cc/box/",
+    "selfOrigins": ["https://raw.liucn.cc/box/"]
+  },
+  {
+    "folder": "wex",
+    "entry": "wex.json",
+    "configUrl": "https://9280.kstore.space/wex.json",
+    "baseUrl": "https://9280.kstore.space/",
+    "selfOrigins": ["https://9280.kstore.space/"]
+  },
+  {
+    "folder": "qist",
+    "entry": "jsm.json",
+    "configUrl": "https://ghproxy.net/https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+    "baseUrl": "https://raw.githubusercontent.com/qist/tvbox/master/",
+    "fetchPrefix": "https://ghproxy.net/",
+    "fallbacks": ["https://cdn.jsdelivr.net/gh/qist/tvbox@master/"],
+    "selfOrigins": ["https://raw.githubusercontent.com/qist/tvbox/master/"]
+  },
+  {
+    "folder": "gao",
+    "entry": "js.json",
+    "configUrl": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+    "baseUrl": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/",
+    "fetchPrefix": "https://ghproxy.net/",
+    "fallbacks": ["https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/"],
+    "selfOrigins": ["https://raw.githubusercontent.com/gaotianliuyun/gao/master/"]
+  }
+]

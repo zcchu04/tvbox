@@ -1,0 +1,9 @@
+{
+  "folder": "wex",
+  "entry": "wex.json",
+  "configUrl": "https://9280.kstore.space/wex.json",
+  "baseUrl": "https://9280.kstore.space/",
+  "selfOrigins": [
+    "https://9280.kstore.space/"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "folder": "gao",
+  "entry": "js.json",
+  "configUrl": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+  "baseUrl": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/",
+  "fetchPrefix": "https://ghproxy.net/",
+  "fallbacks": [
+    "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/"
+  ],
+  "selfOrigins": [
+    "https://raw.githubusercontent.com/gaotianliuyun/gao/master/"
+  ]
+}

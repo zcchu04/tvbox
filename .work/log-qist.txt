@@ -1,0 +1,49 @@
+config ok: jsm.json 47091B
+config refs: 37 unique, 63 file candidates
+FAIL  jar/spider.jar  (403)  <- jsm.json
+OK   tvboxtv.txt 154596B
+OK   lib/drpy2.min.js 111826B
+OK   js/drpy.js 14120B
+OK   js/新闪雷.js 2172B
+OK   js/茶杯狐.js 3811B
+OK   py/ITalkBBTV.py 10066B
+OK   py/OleLive.py 9453B
+OK   py/华数.py 27881B
+OK   py/华谊影视.py 32431B
+OK   py/Didahd.py 11297B
+OK   py/TVB云播.py 16997B
+OK   json/SEJY.json 12537B
+OK   json/XXKT.json 30934B
+OK   json/CZKT.json 41230B
+OK   json/GZKT.json 46427B
+OK   py/Ncat.py 12689B
+OK   js/360影视.js 23845B
+OK   js/百忙无果.js 10871B
+OK   js/腾云驾雾.js 33154B
+OK   js/奇珍异兽.js 28088B
+OK   js/菜狗.js 17612B
+OK   js/优酷.js 73804B
+OK   js/Anime1动畫.js 4910B
+OK   js/NT动漫.js 25827B
+OK   js/路漫漫.js 16510B
+OK   js/去看吧.js 31221B
+OK   js/A8音乐.js 668B
+OK   js/DJ音乐.js 2225B
+OK   js/蜻蜓FM.js 1225B
+OK   js/爱上你听书网.js 985B
+OK   js/博看听书.js 2039B
+OK   js/海洋听书.js 2068B
+OK   js/有声小说吧.js 1830B
+OK   js/播客.js 2008B
+OK   js/酷6网.js 888B
+OK   js/网易公版影像.js 1007B
+OK   lib/drpy-core-lite.min.js 708488B
+
+=== qist: downloaded 38, failures 1, md5 mismatches 0 ===
+failures: [
+ {
+  "relPath": "jar/spider.jar",
+  "status": 403,
+  "from": "jsm.json"
+ }
+]

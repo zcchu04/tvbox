@@ -1,0 +1,19 @@
+=== xray.gz (want 9623089) ===
+  [gao/lib/xray.gz] attempt 1 have=3128368 want=9623089
+curl: (28) Operation timed out after 240007 milliseconds with 2522125 out of 6494721 bytes received
+  BAD gao/lib/xray.gz 10396222/9623089 gzip-FAIL
+=== sing-box.gz (want 10841051) ===
+  [gao/lib/sing-box.gz] attempt 1 have=7143424 want=10841051
+curl: (35) Send failure: Connection was reset
+  [gao/lib/sing-box.gz] attempt 2 have=7307264 want=10841051
+  BAD gao/lib/sing-box.gz 11054043/10841051 gzip-FAIL
+=== clash2singbox.gz (want 2293039) ===
+  [gao/lib/clash2singbox.gz] attempt 1 have=2142208 want=2293039
+curl: (35) Recv failure: Connection was reset
+  [gao/lib/clash2singbox.gz] attempt 2 have=2142208 want=2293039
+  OK  gao/lib/clash2singbox.gz 2293039/2293039 gzip-ok
+=== final ===
+-rw-r--r-- 1 chuzh 197609 2293039 Oct 6 22:27 gao/lib/clash2singbox.gz
+-rw-r--r-- 1 chuzh 197609 37858 Oct 6 21:54 gao/lib/geoip.dat.gz
+-rw-r--r-- 1 chuzh 197609 11054043 Oct 6 22:27 gao/lib/sing-box.gz
+-rw-r--r-- 1 chuzh 197609 10396222 Oct 6 22:27 gao/lib/xray.gz

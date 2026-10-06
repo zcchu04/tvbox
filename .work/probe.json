@@ -1,0 +1,83 @@
+[
+  {
+    "name": "fanty",
+    "url": "http://www.饭太硬.cc/tv",
+    "finalUrl": "http://www.xn--sss604efuw.cc/",
+    "status": 200,
+    "size": 12486,
+    "type": "text/html",
+    "looksJson": false,
+    "ms": 1017,
+    "head": "",
+    "bodyHead": ""
+  },
+  {
+    "name": "fanty-alt",
+    "url": "http://fty.xxooo.cf/tv",
+    "finalUrl": "http://fty.xxooo.cf/tv",
+    "status": 200,
+    "size": 19915,
+    "type": "image/x-ms-bmp",
+    "looksJson": false,
+    "ms": 532,
+    "head": "",
+    "bodyHead": ""
+  },
+  {
+    "name": "liucn",
+    "url": "https://raw.liucn.cc/box/m.json",
+    "finalUrl": "https://raw.liucn.cc/box/m.json",
+    "status": 200,
+    "size": 57874,
+    "type": "application/json; charset=utf-8",
+    "looksJson": true,
+    "ms": 1087,
+    "head": "//以下内容为互联网收集，只为自用。 { \"spider\": \"./fty.jar;md5;3d161697458ecbcd2651a749db761ba1\", \"wallpaper\": \"https://深色壁纸.xxooo.cf/\", \"warningText\": \"资源来自网络，所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买。\", \"sites\": [ {\"key\": \"csp_douban\",\"name\": \"🌕┃豆瓣┃热播\",\"type\": 3,\"api\": \"csp_DouDou\",\"searchable\": 0,\"quickSearch",
+    "bodyHead": ""
+  },
+  {
+    "name": "wex",
+    "url": "https://9280.kstore.space/wex.json",
+    "finalUrl": "https://9280.kstore.space/wex.json",
+    "status": 200,
+    "size": 19893,
+    "type": "application/json",
+    "looksJson": true,
+    "ms": 645,
+    "head": "{ \"spider\": \"http://oss4liview.moji.com/thd_file/2026/10/05/4ef0c536f599d55d11bc5815ab160a2f.jpg;md5;c3bb107baf51fc8f90daf950c539727f\", \"wallpaper\": \"https://www.loliapi.com/acg/\", \"logo\": \"https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773",
+    "bodyHead": ""
+  },
+  {
+    "name": "qist",
+    "url": "https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
+    "status": "ERR",
+    "error": "TypeError: fetch failed",
+    "ms": 736
+  },
+  {
+    "name": "gao",
+    "url": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+    "status": "ERR",
+    "error": "TypeError: fetch failed",
+    "ms": 889
+  },
+  {
+    "name": "moyuer",
+    "url": "http://我不是.摸鱼儿.com",
+    "finalUrl": "http://xn--ihqu10cn4c.xn--v4q818bf34b.com/",
+    "status": 200,
+    "size": 1584,
+    "type": "text/html; charset=utf-8",
+    "looksJson": false,
+    "ms": 1813,
+    "head": "",
+    "bodyHead": ""
+  },
+  {
+    "name": "okcat",
+    "url": "http://ok213.top/tv",
+    "status": "ERR",
+    "error": "TypeError: fetch failed",
+    "ms": 16
+  }
+]
