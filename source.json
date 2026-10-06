@@ -4,10 +4,7 @@
       "name": "饭太硬",
       "url": "http://www.饭太硬.cc/tv"
     },
-    {
-      "name": "综合源",
-      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/1.json"
-    },
+
     {
       "name": "liucn",
       "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/liucn/m.json"
@@ -23,6 +20,10 @@
     {
       "name": "高天流云",
       "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/gao/js.json"
+    },
+    {
+      "name": "xx源",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/cvkkj/1.json"
     }
   ]
 }
