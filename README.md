@@ -72,3 +72,23 @@ common/<md5("https://cdn.example.com/a/b/x.txt")>/x.txt.md5
 - 文件内容 md5 与同名 `.md5` 不一致 → **不覆盖**，只标记该地址已变更，是否更新**由人工判定**后再改。
 
 定位方式：在 `common/url-index.tsv` 里按 `url` 找到 `dir`，比对目录内 `<file>.md5` 与重新拉取该地址内容算出的 md5。
+
+## 维护工具（`tools/`）
+
+按下面的顺序跑，每一步的中间结果写在 `tools/.state/`（已 gitignore）。源清单、`pathRemap`、`urlOverrides`、大文件清单都在 `tools/sources.json` 里改。
+
+| 脚本 | 作用 |
+| --- | --- |
+| `probe.mjs candidates.json` | 探测候选源地址：能否 200、是不是 JSON 配置（有 `sites`）。落地页/图片/跳转广告页会判为 REJECT |
+| `mirror.mjs <folder>` | 抓源配置 + 它用相对路径引用的文件到 `<folder>/`，校验 `;md5;` 声明 |
+| `remap-check.mjs <folder>` | 对抓不到的文件，在已抓文件里找同名文件，据此决定是否加 `pathRemap` |
+| `transform.mjs <folder>` | 剔除引用了抓不到文件的条目，把相对引用改写成本仓库 raw 地址 |
+| `common-snapshot.mjs` | 把各源配置里的绝对地址文件快照进 `common/` |
+| `common-rewrite.mjs <folder>` | 剔除绝对地址快照失败的条目，把绝对引用改写指向 `common/` |
+| `index.mjs` | 重建 `common/url-index.tsv` |
+| `fetch-large.mjs` | 下载大文件（spider jar、代理内核）。公共 github 代理会截断大响应，这里按预期字节数校验并对短传做 Range 续传 |
+| `verify.mjs` | 全量校验：配置可解析、引用都存在、`;md5;` 与文件一致、每个 `common/` 文件都有匹配的 `.md5` |
+
+加新源：先在 `tools/sources.json` 里加一条（`folder` / `entry` / `configUrl` / `baseUrl` / `selfOrigins`），然后 `probe → mirror → transform → common-snapshot → common-rewrite → index → verify`，最后把该源的条目追加进 `source.json` 的 `urls` 并跑一次 `verify.mjs`。
+
+`common-snapshot.mjs` 不会覆盖已有快照：md5 不一致时只在报告里标 `CHANGED`，等人工判定后再动。

@@ -1,0 +1,114 @@
+{
+  "rawPrefix": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/",
+  "sources": [
+    {
+      "folder": "cvkkj",
+      "entry": "1.json",
+      "name": "综合源",
+      "configUrl": "https://tv.cvkkj.top/1.json",
+      "baseUrl": "https://tv.cvkkj.top/",
+      "selfOrigins": ["https://tv.cvkkj.top/"],
+      "pathRemap": {
+        "js/freeok.js": "js/freeok配置.js",
+        "js/libvio.js": "js/libvio配置.js"
+      }
+    },
+    {
+      "folder": "liucn",
+      "entry": "m.json",
+      "name": "liucn",
+      "configUrl": "https://raw.liucn.cc/box/m.json",
+      "baseUrl": "https://raw.liucn.cc/box/",
+      "selfOrigins": ["https://raw.liucn.cc/box/"],
+      "pathRemap": {
+        "lib/drpy2.min.js": "libs/js/drpy2.min.js",
+        "lib/TVB云播.js": "libs/js/TVB云播.js",
+        "lib/有声小说吧.js": "libs/js/有声小说吧.js"
+      }
+    },
+    {
+      "folder": "wex",
+      "entry": "wex.json",
+      "name": "王小二",
+      "configUrl": "https://9280.kstore.space/wex.json",
+      "baseUrl": "https://9280.kstore.space/",
+      "selfOrigins": ["https://9280.kstore.space/"]
+    },
+    {
+      "folder": "qist",
+      "entry": "jsm.json",
+      "name": "qist",
+      "configUrl": "https://ghproxy.net/https://raw.githubusercontent.com/qist/tvbox/master/jsm.json",
+      "baseUrl": "https://raw.githubusercontent.com/qist/tvbox/master/",
+      "fetchPrefix": "https://ghproxy.net/",
+      "fallbacks": ["https://cdn.jsdelivr.net/gh/qist/tvbox@master/"],
+      "selfOrigins": ["https://raw.githubusercontent.com/qist/tvbox/master/"]
+    },
+    {
+      "folder": "gao",
+      "entry": "js.json",
+      "name": "高天流云",
+      "configUrl": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/js.json",
+      "baseUrl": "https://raw.githubusercontent.com/gaotianliuyun/gao/master/",
+      "fetchPrefix": "https://ghproxy.net/",
+      "fallbacks": ["https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/"],
+      "selfOrigins": ["https://raw.githubusercontent.com/gaotianliuyun/gao/master/"]
+    }
+  ],
+  "urlOverrides": {
+    "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt": {
+      "aliasTo": "common/a2c5af8378b4d7c0bc413b6cfa55fb6e/interface.txt"
+    },
+    "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u": {
+      "fetchAs": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+    },
+    "https://github.moeyy.xyz/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt": {
+      "fetchAs": "https://ghproxy.net/https://raw.githubusercontent.com/dxawi/0/main/tvlive.txt"
+    }
+  },
+  "largeFiles": [
+    {
+      "dest": "qist/jar/spider.jar",
+      "want": 1859860,
+      "integrity": "zip",
+      "sources": [
+        "https://ghproxy.net/https://raw.githubusercontent.com/qist/tvbox/master/jar/spider.jar"
+      ]
+    },
+    {
+      "dest": "gao/jar/pg.jar",
+      "want": 2684075,
+      "integrity": "zip",
+      "sources": [
+        "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/jar/pg.jar"
+      ]
+    },
+    {
+      "dest": "gao/lib/xray.gz",
+      "want": 9623089,
+      "integrity": "gzip",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/lib/xray.gz",
+        "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/lib/xray.gz"
+      ]
+    },
+    {
+      "dest": "gao/lib/sing-box.gz",
+      "want": 10841051,
+      "integrity": "gzip",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/lib/sing-box.gz",
+        "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/lib/sing-box.gz"
+      ]
+    },
+    {
+      "dest": "gao/lib/clash2singbox.gz",
+      "want": 2293039,
+      "integrity": "gzip",
+      "sources": [
+        "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/lib/clash2singbox.gz",
+        "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/lib/clash2singbox.gz"
+      ]
+    }
+  ]
+}
