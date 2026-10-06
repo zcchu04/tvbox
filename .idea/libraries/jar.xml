@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cvkkj/jar/jinenge.jar!/" />
+      <root url="jar://$PROJECT_DIR$/cvkkj/jar/通用.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
