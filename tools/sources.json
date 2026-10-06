@@ -55,6 +55,14 @@
       "selfOrigins": ["https://raw.githubusercontent.com/gaotianliuyun/gao/master/"]
     }
   ],
+  "merges": [
+    {
+      "output": "hb.json",
+      "name": "合并源",
+      "sources": ["liucn", "wex", "qist", "gao"],
+      "topSpiderFrom": "qist"
+    }
+  ],
   "urlOverrides": {
     "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt": {
       "aliasTo": "common/a2c5af8378b4d7c0bc413b6cfa55fb6e/interface.txt"

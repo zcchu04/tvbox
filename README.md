@@ -12,6 +12,7 @@ https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/source.json
 
 ```
 source.json            多仓索引，urls 里每条对应一个源
+hb.json                合并源：liucn + 王小二 + qist + 高天流云 合并成的一份配置
 cvkkj/ liucn/ wex/ ... 每个源一个目录：源配置文件 + 它用相对路径引用的文件
 common/                各源用绝对地址引用的文件（见下）
 ```
@@ -22,7 +23,7 @@ common/                各源用绝对地址引用的文件（见下）
 
 | 目录 | 源 | 备注 |
 | --- | --- | --- |
-| `cvkkj` | 综合源 `https://tv.cvkkj.top/1.json` | 站点 46→42、直播 1；上游两处引用指向不存在的文件名，已改指实际文件 |
+| `cvkkj` | xx源 `https://tv.cvkkj.top/1.json` | 站点 46→42、直播 1；上游两处引用指向不存在的文件名，已改指实际文件 |
 | `liucn` | `https://raw.liucn.cc/box/m.json` | 站点 234→221、直播 3→1 |
 | `wex` | 王小二 `https://9280.kstore.space/wex.json` | 站点 63、直播 2；配置内全为绝对地址，13 处已改指 `common/` |
 | `qist` | `https://raw.githubusercontent.com/qist/tvbox/master/jsm.json` | 站点 149、直播 3；经 ghproxy 抓取 |
@@ -35,6 +36,24 @@ common/                各源用绝对地址引用的文件（见下）
 - OK猫开发 `http://ok213.top/tv`：域名有 NS 记录但无 A/AAAA 记录。
 
 源站 404 的引用，对应站点/直播条目会从镜像配置中剔除；如果只是上游把目录写错、同名文件在别处存在，则改指正确路径而不是删除。
+
+## 合并源（`hb.json`）
+
+`hb.json` 把 `liucn`、`王小二`、`qist`、`高天流云` 四份配置合并成一份，由 `tools/merge.mjs` 生成。合并规则是按客户端 `com.fongmi.android.tv.api` 的实际行为定的，不是各取一份随便拼：
+
+| 字段 | 规则 | 依据 |
+| --- | --- | --- |
+| `sites` | 按 `key` 去重，先出现的保留 | `Site.equals` 只比 key，`initSite` 遇到已有的 key 直接 `continue` |
+| `sites[].jar` | 每个 `csp_` 站点写上它原来那份配置的顶层 spider | `parseJar(site, spider)` 只在站点无 `jar` 时回退到顶层 spider，写死等价于原行为 |
+| 顶层 `spider` | 只能放**一个** jar，取 qist 的 | `JarLoader.parseJar` 按 `;md5;` 切开只读前两段，多 jar 拼接会解析失败；四个 jar 里只有 qist 和 liucn 的带 `com.github.catvod.parser.Json*/Mix*`（`Json聚合`/`Web聚合` 解析要用） |
+| `parses` | 按 `name` 去重 | `initParse` 对已存在的 parse 直接跳过 |
+| `rules` | 按 `name` 去重，但 `proxy` 规则合并其 `hosts` | `setRules` 会把**每一条**名为 `proxy` 的规则的 hosts 都加进 http selector |
+| `lives` / `doh` / `headers` | 按 `name`（headers 按 `host`）去重 | — |
+| `ads` / `flags` / `hosts` | 字符串列表取并集 | — |
+| `wallpaper` | 取第一个能连通的 | 顶层只接受一个值 |
+| `./` 引用 | 全部改写成该源目录的绝对地址 | `Decoder.fix` 会把配置文本里**每一处** `./` 换成配置自身所在目录；`hb.json` 在仓库根目录，保留相对路径会指错地方 |
+
+合并后：站点 730 → 675（去重后）、解析 71 → 50、规则 53 → 33、直播 8。`tools/check-jars.mjs` 可以核对每个 `csp_` 站点要的类是否真在它指向的 jar 里。
 
 ## 绝对地址资源的镜像规则（`common/`）
 
@@ -80,15 +99,19 @@ common/<md5("https://cdn.example.com/a/b/x.txt")>/x.txt.md5
 | 脚本 | 作用 |
 | --- | --- |
 | `probe.mjs candidates.json` | 探测候选源地址：能否 200、是不是 JSON 配置（有 `sites`）。落地页/图片/跳转广告页会判为 REJECT |
-| `mirror.mjs <folder>` | 抓源配置 + 它用相对路径引用的文件到 `<folder>/`，校验 `;md5;` 声明 |
+| `mirror.mjs <folder>` | 抓源配置 + 它用相对路径引用的文件到 `<folder>/`，校验 `;md5;` 声明。会展开 `a$$$b$$$./c.json` 这类拼接值，把里面每个 `./` 字段都当引用抓 |
 | `remap-check.mjs <folder>` | 对抓不到的文件，在已抓文件里找同名文件，据此决定是否加 `pathRemap` |
 | `transform.mjs <folder>` | 剔除引用了抓不到文件的条目，把相对引用改写成本仓库 raw 地址 |
 | `common-snapshot.mjs` | 把各源配置里的绝对地址文件快照进 `common/` |
 | `common-rewrite.mjs <folder>` | 剔除绝对地址快照失败的条目，把绝对引用改写指向 `common/` |
 | `index.mjs` | 重建 `common/url-index.tsv` |
+| `merge.mjs [n]` | 按 `merges` 配置生成合并配置（默认 `hb.json`） |
+| `check-jars.mjs [file]` | 核对每个 `csp_` 站点要的类是否在它指向的 jar 里，区分上游就坏的与你自己的错 |
 | `fetch-large.mjs` | 下载大文件（spider jar、代理内核）。公共 github 代理会截断大响应，这里按预期字节数校验并对短传做 Range 续传 |
-| `verify.mjs` | 全量校验：配置可解析、引用都存在、`;md5;` 与文件一致、每个 `common/` 文件都有匹配的 `.md5` |
+| `verify.mjs` | 全量校验：配置可解析、引用都存在、`;md5;` 与文件一致、每个 `common/` 文件都有匹配的 `.md5`（含合并产物） |
 
 加新源：先在 `tools/sources.json` 里加一条（`folder` / `entry` / `configUrl` / `baseUrl` / `selfOrigins`），然后 `probe → mirror → transform → common-snapshot → common-rewrite → index → verify`，最后把该源的条目追加进 `source.json` 的 `urls` 并跑一次 `verify.mjs`。
+
+合并配置：改 `tools/sources.json` 的 `merges` 后跑 `merge.mjs`，再用 `check-jars.mjs` 和 `verify.mjs` 复核。`merges[].topSpiderFrom` 决定顶层用哪个源的 jar。
 
 `common-snapshot.mjs` 不会覆盖已有快照：md5 不一致时只在报告里标 `CHANGED`，等人工判定后再动。

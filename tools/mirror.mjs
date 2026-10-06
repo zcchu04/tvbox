@@ -56,8 +56,26 @@ function resolveRef(ref) {
   return { rel: segs.join('/'), fromRoot: false };
 }
 
+const SEP = '\u0024\u0024\u0024';
+
 function refsInJson(text) {
   return [...stripComments(text).matchAll(/"(\.\.?\/[^"]*)"/g)].map((m) => m[1]);
+}
+
+// A config value like "./lib/token.json$$$https://...$$$./json/x.json" is a packed field
+// list. The client (Decoder.fix) replaces every "./" in the config text with the config's
+// own directory, so each "./"-prefixed field is a reference relative to the source root.
+function refsInConfig(text) {
+  const out = [];
+  for (const m of stripComments(text).matchAll(/"(\.\.?\/[^"]*)"/g)) {
+    const value = m[1];
+    if (!value.includes(SEP)) {
+      out.push(value);
+      continue;
+    }
+    for (const field of value.split(SEP)) if (field.startsWith('./') || field.startsWith('../')) out.push(field);
+  }
+  return out;
 }
 
 function refsInJs(text) {
@@ -95,7 +113,7 @@ const seen = new Set();
 const scanned = new Set();
 const queue = [];
 
-for (const raw of refsInJson(cfg.buf.toString('utf8'))) {
+for (const raw of refsInConfig(cfg.buf.toString('utf8'))) {
   const [filePart, declared] = raw.split(';md5;');
   const r = resolveRef(filePart);
   if (!r) continue;

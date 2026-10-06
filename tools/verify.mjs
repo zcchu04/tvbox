@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadProject, readConfig, parseConfig, codeMd5, splitDeclaredMd5 } from './lib.mjs';
+import { loadProject, parseConfig, codeMd5 } from './lib.mjs';
 
 // End-to-end check of the mirror:
 //   1. every config still parses (line comments allowed)
@@ -16,15 +16,21 @@ const problems = [];
 let refs = 0;
 let declared = 0;
 
-for (const spec of project.sources) {
-  const file = path.join(spec.folder, spec.entry);
+// configs = every mirrored source plus every merged output
+const configs = [
+  ...project.sources.map((s) => ({ label: s.folder, folder: s.folder, entry: s.entry })),
+  ...(project.merges || []).map((m) => ({ label: path.basename(m.output, '.json'), file: m.output })),
+];
+
+for (const spec of configs) {
+  const file = spec.file || path.join(spec.folder, spec.entry);
   if (!fs.existsSync(file)) {
     problems.push(`missing config ${file}`);
     continue;
   }
   let obj;
   try {
-    obj = parseConfig(readConfig(spec.folder, spec.entry).text).obj;
+    obj = parseConfig(fs.readFileSync(file, 'utf8')).obj;
   } catch (e) {
     problems.push(`${file} does not parse: ${e.message}`);
     continue;
@@ -33,19 +39,23 @@ for (const spec of project.sources) {
   for (const m of JSON.stringify(obj).matchAll(/"(https:\/\/raw\.giteeusercontent\.com\/zcchu\/tvbox\/raw\/master\/[^"]+)"/g)) {
     const rel = m[1].slice(RAW.length);
     const [relPath, want] = rel.split(';md5;');
-    const p = relPath.split('/').join(path.sep);
+    // a "$$$"-joined value is a packed field list; only its first field is a path
+    const first = relPath.split('$$$')[0];
+    const p = first.split('/').join(path.sep);
     if (!fs.existsSync(p)) {
-      problems.push(`${file}: ${relPath} does not exist`);
+      problems.push(`${file}: ${first} does not exist`);
       continue;
     }
     refs++;
     if (want) {
       declared++;
       const got = codeMd5(fs.readFileSync(p));
-      if (got !== want) problems.push(`${file}: ${relPath} md5 ${got} != declared ${want}`);
+      if (got !== want) problems.push(`${file}: ${first} md5 ${got} != declared ${want}`);
     }
   }
-  console.log(`${spec.folder.padEnd(6)} sites=${(obj.sites || []).length} lives=${(obj.lives || []).length} parses=${(obj.parses || []).length}`);
+  console.log(
+    `${spec.label.padEnd(6)} sites=${(obj.sites || []).length} lives=${(obj.lives || []).length} parses=${(obj.parses || []).length} rules=${(obj.rules || []).length}`,
+  );
 }
 
 let snapshots = 0;

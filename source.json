@@ -1,6 +1,10 @@
 {
   "urls": [
     {
+      "name": "合并源",
+      "url": "https://raw.giteeusercontent.com/zcchu/tvbox/raw/master/hb.json"
+    },
+    {
       "name": "饭太硬",
       "url": "http://www.饭太硬.cc/tv"
     },
